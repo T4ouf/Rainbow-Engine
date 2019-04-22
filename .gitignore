@@ -1,3 +1,5 @@
+.vs/
+
 # Prerequisites
 *.d
 
@@ -8,8 +10,8 @@
 *.obj
 
 # Precompiled Headers
-*.gch
-*.pch
+#*.gch
+#*.pch
 
 # Compiled Dynamic libraries
 *.so
