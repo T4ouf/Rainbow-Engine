@@ -1,0 +1,2 @@
+﻿  test.cc
+LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'libsndfile-1.lib'

@@ -1,0 +1,45 @@
+﻿  Rainbow_pch.cpp
+  stb_image.cpp
+  imgui_impl_glfw_gl3.cpp
+  imgui_draw.cpp
+  imgui_demo.cpp
+  imgui.cpp
+  glm.cpp
+  VertexBuffer.cpp
+  VertexArray.cpp
+  Texture.cpp
+  SoundManager.cpp
+  SoundContext.cpp
+  Sound.cpp
+  Shader.cpp
+  Scene.cpp
+  Renderer.cpp
+  Positionable.cpp
+  PhysicObject.cpp
+c:\users\admin\desktop\rainbow-engine\rainbowengine\src\rainbow\physicobject.cpp(87): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+c:\users\admin\desktop\rainbow-engine\rainbowengine\src\rainbow\physicobject.cpp(88): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+c:\users\admin\desktop\rainbow-engine\rainbowengine\src\rainbow\physicobject.cpp(89): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+  ObjectFactory.cpp
+  Object.cpp
+c:\users\admin\desktop\rainbow-engine\rainbowengine\src\rainbow\object.cpp(91): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+  MeshFactory.cpp
+c:\users\admin\desktop\rainbow-engine\rainbowengine\src\rainbow\meshfactory.cpp(628): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+c:\users\admin\desktop\rainbow-engine\rainbowengine\src\rainbow\meshfactory.cpp(629): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+c:\users\admin\desktop\rainbow-engine\rainbowengine\src\rainbow\meshfactory.cpp(648): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+c:\users\admin\desktop\rainbow-engine\rainbowengine\src\rainbow\meshfactory.cpp(649): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+  Génération de code en cours...
+  Compilation en cours...
+  Mesh.cpp
+  Material.cpp
+  Macros.cpp
+  Light.cpp
+  IndexBuffer.cpp
+  Force.cpp
+  Camera.cpp
+  Application.cpp
+  Génération de code en cours...
+libsndfile-1.lib(libsndfile-1.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR dÚjÓ dÚfini dans OpenAL32.lib(OpenAL32.dll)á; seconde dÚfinition ignorÚe
+libsndfile-1.lib(libsndfile-1.dll) : warning LNK4221: Ce fichier objet ne dÚfinit pas de symboles publics jusqu'ici non dÚfinis. Par consÚquent, il ne sera utilisÚ par aucune opÚration de lien utilisant cette bibliothÞque
+opengl32.lib(OPENGL32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR dÚjÓ dÚfini dans OpenAL32.lib(OpenAL32.dll)á; seconde dÚfinition ignorÚe
+opengl32.lib(OPENGL32.dll) : warning LNK4221: Ce fichier objet ne dÚfinit pas de symboles publics jusqu'ici non dÚfinis. Par consÚquent, il ne sera utilisÚ par aucune opÚration de lien utilisant cette bibliothÞque
+  RainbowEngine.vcxproj -> C:\Users\admin\Desktop\Rainbow-Engine\\bin\Win32-Debug\RainbowEngine\RainbowEngine.lib

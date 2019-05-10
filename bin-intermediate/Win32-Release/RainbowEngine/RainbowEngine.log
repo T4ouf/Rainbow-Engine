@@ -1,0 +1,13 @@
+﻿  Rainbow_pch.cpp
+  Application.cpp
+  Sound.cpp
+  SoundContext.cpp
+  SoundManager.cpp
+  glm.cpp
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_glfw_gl3.cpp
+libsndfile-1.lib(libsndfile-1.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR dÚjÓ dÚfini dans OpenAL32.lib(OpenAL32.dll)á; seconde dÚfinition ignorÚe
+glew32.lib(glew32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR dÚjÓ dÚfini dans OpenAL32.lib(OpenAL32.dll)á; seconde dÚfinition ignorÚe
+  RainbowEngine.vcxproj -> C:\Users\admin\Desktop\Rainbow-Engine\\bin\Win32-Release\RainbowEngine\RainbowEngine.lib

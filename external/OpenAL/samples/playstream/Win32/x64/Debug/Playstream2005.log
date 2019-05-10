@@ -1,0 +1,36 @@
+﻿  aldlist.cpp
+  CWaves.cpp
+  Framework.cpp
+  LoadOAL.cpp
+  PlayStream.cpp
+  Génération de code en cours...
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): warning MSB8012: TargetPath(C:\Program Files (x86)\OpenAL 1.1 SDK\samples\playstream\Win32\x64\Debug\PlayStream.exe) ne correspond pas à la valeur de la propriété OutputFile (C:\Program Files (x86)\OpenAL 1.1 SDK\samples\playstream\Win32\x64\Debug\PlayStreamWin32.exe) de Linker. Cela peut entraîner une génération incorrecte de votre projet. Pour corriger ce problème, vérifiez que les valeurs des propriétés $(OutDir), $(TargetName) et $(TargetExt) correspondent à la valeur spécifiée dans %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1218,5): warning MSB8012: TargetName(PlayStream) ne correspond pas à la valeur de la propriété OutputFile (PlayStreamWin32) de Linker. Cela peut entraîner une génération incorrecte de votre projet. Pour corriger ce problème, vérifiez que les valeurs des propriétés $(OutDir), $(TargetName) et $(TargetExt) correspondent à la valeur spécifiée dans %(Link.OutputFile).
+Framework.obj : error LNK2019: symbole externe non résolu __imp_alGetError référencé dans la fonction "char __cdecl ALFWLoadWaveToBuffer(char const *,unsigned int,int)" (?ALFWLoadWaveToBuffer@@YADPEBDIH@Z)
+Framework.obj : error LNK2019: symbole externe non résolu __imp_alIsExtensionPresent référencé dans la fonction "char __cdecl ALFWIsXRAMSupported(void)" (?ALFWIsXRAMSupported@@YADXZ)
+Framework.obj : error LNK2019: symbole externe non résolu __imp_alGetProcAddress référencé dans la fonction "char __cdecl ALFWIsXRAMSupported(void)" (?ALFWIsXRAMSupported@@YADXZ)
+Framework.obj : error LNK2019: symbole externe non résolu __imp_alGetEnumValue référencé dans la fonction "char __cdecl ALFWLoadWaveToBuffer(char const *,unsigned int,int)" (?ALFWLoadWaveToBuffer@@YADPEBDIH@Z)
+PlayStream.obj : error LNK2001: symbole externe non résolu __imp_alGetEnumValue
+Framework.obj : error LNK2019: symbole externe non résolu __imp_alBufferData référencé dans la fonction "char __cdecl ALFWLoadWaveToBuffer(char const *,unsigned int,int)" (?ALFWLoadWaveToBuffer@@YADPEBDIH@Z)
+PlayStream.obj : error LNK2001: symbole externe non résolu __imp_alBufferData
+Framework.obj : error LNK2019: symbole externe non résolu __imp_alcCreateContext référencé dans la fonction "char __cdecl ALFWInitOpenAL(void)" (?ALFWInitOpenAL@@YADXZ)
+Framework.obj : error LNK2019: symbole externe non résolu __imp_alcMakeContextCurrent référencé dans la fonction "char __cdecl ALFWInitOpenAL(void)" (?ALFWInitOpenAL@@YADXZ)
+Framework.obj : error LNK2019: symbole externe non résolu __imp_alcDestroyContext référencé dans la fonction "char __cdecl ALFWShutdownOpenAL(void)" (?ALFWShutdownOpenAL@@YADXZ)
+Framework.obj : error LNK2019: symbole externe non résolu __imp_alcGetCurrentContext référencé dans la fonction "char __cdecl ALFWShutdownOpenAL(void)" (?ALFWShutdownOpenAL@@YADXZ)
+Framework.obj : error LNK2019: symbole externe non résolu __imp_alcGetContextsDevice référencé dans la fonction "char __cdecl ALFWShutdownOpenAL(void)" (?ALFWShutdownOpenAL@@YADXZ)
+Framework.obj : error LNK2019: symbole externe non résolu __imp_alcOpenDevice référencé dans la fonction "char __cdecl ALFWInitOpenAL(void)" (?ALFWInitOpenAL@@YADXZ)
+Framework.obj : error LNK2019: symbole externe non résolu __imp_alcCloseDevice référencé dans la fonction "char __cdecl ALFWInitOpenAL(void)" (?ALFWInitOpenAL@@YADXZ)
+Framework.obj : error LNK2019: symbole externe non résolu __imp_alcIsExtensionPresent référencé dans la fonction "char __cdecl ALFWIsEFXSupported(void)" (?ALFWIsEFXSupported@@YADXZ)
+Framework.obj : error LNK2019: symbole externe non résolu __imp_alcGetString référencé dans la fonction "char __cdecl ALFWInitOpenAL(void)" (?ALFWInitOpenAL@@YADXZ)
+PlayStream.obj : error LNK2019: symbole externe non résolu __imp_alGenSources référencé dans la fonction main
+PlayStream.obj : error LNK2019: symbole externe non résolu __imp_alDeleteSources référencé dans la fonction main
+PlayStream.obj : error LNK2019: symbole externe non résolu __imp_alSourcei référencé dans la fonction main
+PlayStream.obj : error LNK2019: symbole externe non résolu __imp_alGetSourcei référencé dans la fonction main
+PlayStream.obj : error LNK2019: symbole externe non résolu __imp_alSourcePlay référencé dans la fonction main
+PlayStream.obj : error LNK2019: symbole externe non résolu __imp_alSourceStop référencé dans la fonction main
+PlayStream.obj : error LNK2019: symbole externe non résolu __imp_alSourceQueueBuffers référencé dans la fonction main
+PlayStream.obj : error LNK2019: symbole externe non résolu __imp_alSourceUnqueueBuffers référencé dans la fonction main
+PlayStream.obj : error LNK2019: symbole externe non résolu __imp_alGenBuffers référencé dans la fonction main
+PlayStream.obj : error LNK2019: symbole externe non résolu __imp_alDeleteBuffers référencé dans la fonction main
+..\..\..\libs\Win32\OpenAL32.lib : warning LNK4272: type d'ordinateur bibliothèque 'x86' en conflit avec le type d'ordinateur cible 'x64'
+C:\Program Files (x86)\OpenAL 1.1 SDK\samples\playstream\Win32\x64\Debug\PlayStreamWin32.exe : fatal error LNK1120: 24 externes non résolus

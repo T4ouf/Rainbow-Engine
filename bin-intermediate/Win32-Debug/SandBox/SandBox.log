@@ -1,0 +1,4 @@
+﻿  SandboxApp.cpp
+c:\users\admin\desktop\rainbow-engine\sandbox\src\sandboxapp.cpp(189): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+  SandBox.vcxproj -> C:\Users\admin\Desktop\Rainbow-Engine\\bin\Win32-Debug\SandBox\SandBox.exe
+  SandBox.vcxproj -> C:\Users\admin\Desktop\Rainbow-Engine\\bin\Win32-Debug\SandBox\SandBox.pdb (Partial PDB)
