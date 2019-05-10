@@ -70,34 +70,46 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)\bin\$(Platform)-$(Configuration)\$(ProjectName)</OutDir>
-    <IntDir>$(SolutionDir)\bin-intermediate\$(Platform)-$(Configuration)\$(ProjectName)</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Platform)-$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)\bin-intermediate\$(Platform)-$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)\bin\$(Platform)-$(Configuration)\$(ProjectName)</OutDir>
-    <IntDir>$(SolutionDir)\bin-intermediate\$(Platform)-$(Configuration)\$(ProjectName)</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Platform)-$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)\bin-intermediate\$(Platform)-$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)\bin\$(Platform)-$(Configuration)\$(ProjectName)</OutDir>
-    <IntDir>$(SolutionDir)\bin-intermediate\$(Platform)-$(Configuration)\$(ProjectName)</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Platform)-$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)\bin-intermediate\$(Platform)-$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)\bin\$(Platform)-$(Configuration)\$(ProjectName)</OutDir>
-    <IntDir>$(SolutionDir)\bin-intermediate\$(Platform)-$(Configuration)\$(ProjectName)</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Platform)-$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)\bin-intermediate\$(Platform)-$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>RAINBOW_PLATFORM_WINDOWS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\RainbowEngine\src\Rainbow;$(SolutionDir)\RainbowEngine\src\Vendor;$(SolutionDir)\RainbowEngine\src;$(SolutionDir)\RainbowEngine\src\Rainbow;$(SolutionDir)\RainbowEngine\src\Vendor;$(SolutionDir)\RainbowEngine\src;$(SolutionDir)external\libsndfile\include;$(SolutionDir)external\OpenAL\include;$(SolutionDir)external\GLFW\include;$(SolutionDir)external\GLEW\include;</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)LevelEditor\librairies;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ProjectReference />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>RAINBOW_PLATFORM_WINDOWS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\RainbowEngine\src\Rainbow;$(SolutionDir)\RainbowEngine\src\Vendor;$(SolutionDir)\RainbowEngine\src;$(SolutionDir)\RainbowEngine\src\Rainbow;$(SolutionDir)\RainbowEngine\src\Vendor;$(SolutionDir)\RainbowEngine\src;$(SolutionDir)external\libsndfile\include;$(SolutionDir)external\OpenAL\include;$(SolutionDir)external\GLFW\include;$(SolutionDir)external\GLEW\include;</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)LevelEditor\librairies;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ProjectReference />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -106,11 +118,15 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>RAINBOW_PLATFORM_WINDOWS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\RainbowEngine\src\Rainbow;$(SolutionDir)\RainbowEngine\src\Vendor;$(SolutionDir)\RainbowEngine\src;$(SolutionDir)\RainbowEngine\src\Rainbow;$(SolutionDir)\RainbowEngine\src\Vendor;$(SolutionDir)\RainbowEngine\src;$(SolutionDir)external\libsndfile\include;$(SolutionDir)external\OpenAL\include;$(SolutionDir)external\GLFW\include;$(SolutionDir)external\GLEW\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)LevelEditor\librairies;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <ProjectReference />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -119,13 +135,26 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>RAINBOW_PLATFORM_WINDOWS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\RainbowEngine\src\Rainbow;$(SolutionDir)\RainbowEngine\src\Vendor;$(SolutionDir)\RainbowEngine\src;$(SolutionDir)\RainbowEngine\src\Rainbow;$(SolutionDir)\RainbowEngine\src\Vendor;$(SolutionDir)\RainbowEngine\src;$(SolutionDir)external\libsndfile\include;$(SolutionDir)external\OpenAL\include;$(SolutionDir)external\GLFW\include;$(SolutionDir)external\GLEW\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)LevelEditor\librairies;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <ProjectReference />
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RainbowEngine\RainbowEngine.vcxproj">
+      <Project>{fb5c3a7c-0466-4713-9c92-3d006227606a}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\LevelEditorApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\LevelEditorApp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
